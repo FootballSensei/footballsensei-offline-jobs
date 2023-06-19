@@ -147,9 +147,6 @@ class SentimentAnalysis:
         team1_negative_results = np.sum(np.reshape(team1_negative_array,(TOTAL_PLAYERS,NUMBER_OF_THREADS)),axis=1) / -NUMBER_OF_THREADS
         team2_negative_results = np.sum(np.reshape(team2_negative_array,(TOTAL_PLAYERS,NUMBER_OF_THREADS)),axis=1) / -NUMBER_OF_THREADS
 
-        ### create bar graphs for Part 2 displaying data and then save down
-
-
         # reshape sum arrays for graphing
 
         self.team1_positive_results = np.round(np.reshape(team1_positive_results,(1,TOTAL_PLAYERS)).tolist(),3)
